@@ -58,12 +58,15 @@
     color: #000;
 }
 
-.home-section {
+.home {
     display: flex;
-    width: 100%;
-    min-width: 400px;
-    gap: 20px;
+    width: 90%;
+    min-width: 300px;
+    gap: 50px;
     margin-top: 20px;
+    margin-left: 70px;
+    
+    
 }
 
 .home-esquerda, .home-direita {
@@ -77,10 +80,14 @@
 .home-esquerda {
     background: #555;
     color: #fff;
+    margin-left: 20px;
+    box-shadow: #fff 0 0 20px 5px;
 }
 .home-direita {
     background: #555;
     color: #ffffff;
+    margin-right: 20px;
+    box-shadow: #fff 0 0 20px 5px;
 }
 
 .contato{
