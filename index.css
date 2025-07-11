@@ -43,14 +43,13 @@
     color: black;
 }
 
-/*
 .navegacao li:hover,
 .navegacao li.active,
 .navegacao li.active:hover {
-    width: 150px;           
+    width: 150px;           /* Só aumenta a largura */
     background: #fff;
     box-shadow: #ffffff 1px 1px 5px 2px;
-    border-radius: 20px;    
+    border-radius: 20px;    /* Mantém o mesmo border-radius */
 }
 
 .navegacao li:hover a,
@@ -58,7 +57,32 @@
 .navegacao li.active:hover a {
     color: #000;
 }
-*/
+
+.home-section {
+    display: flex;
+    width: 100%;
+    min-width: 400px;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.home-esquerda, .home-direita {
+    flex: 1; 
+    padding: 30px;
+    border-radius: 10%;
+    box-sizing: border-box;
+    border: 2px solid #fff;
+}
+
+.home-esquerda {
+    background: #555;
+    color: #fff;
+}
+.home-direita {
+    background: #555;
+    color: #ffffff;
+}
+
 .contato{
     position: fixed;
     bottom: 30px;
