@@ -25,6 +25,7 @@
     align-items: center;
     justify-content: center;
     transition: background 0.3s width 0.3s;
+    
 }
 
 .navegacao li:hover {
