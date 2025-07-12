@@ -1,3 +1,28 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    padding-top: 90px; 
+}
+
+.cabecalho {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+}
+
+section {
+    scroll-margin-top: 100px; /* ajuste para o tamanho do seu header */
+}
+
 .navegacao{
     width: 100%;
     display: flex;
@@ -14,7 +39,8 @@
     padding: 1rem;
     margin: 0;
 }
-.navegacao li{
+.navegacao li {
+    position: relative;
     width: 120px;
     height: 40px;
     background: #000;
@@ -25,7 +51,7 @@
     align-items: center;
     justify-content: center;
     transition: background 0.3s width 0.3s;
-    
+    padding: 0;
 }
 
 .navegacao li:hover {
@@ -36,8 +62,14 @@
 }
 
 .navegacao a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
     color: white;
     text-decoration: none;
+    border-radius: 20px;
 }
 
 .navegacao li:hover a {
@@ -64,7 +96,7 @@
     width: 90%;
     min-width: 300px;
     gap: 50px;
-    margin-top: 20px;
+    margin-top: 50px;
     margin-left: 70px;
     
     
@@ -84,42 +116,136 @@
     margin-left: 20px;
     box-shadow: #fff 0 0 20px 5px;
 }
+
+.home-esquerda h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.home-esquerda p {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    text-align: justify;
+}
 .home-direita {
     background: #555;
     color: #ffffff;
     margin-right: 20px;
     box-shadow: #fff 0 0 20px 5px;
+    display: flex;             
+    flex-direction: column;       
+    align-items: center;         
+    justify-content: center;    
 }
 
-.contato{
+.home-direita h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+
+.home-direita img{
+    width: 15rem;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: #fff 0 0 20px 5px;
+    height: 25rem;
+}
+
+/*Experiência*/
+.experiencia {
+    display: flex;
+    width: 90%;
+    min-width: 300px;
+    gap: 50px;
+    margin-top: 100px;
+    margin-left: 70px;
+    
+    
+}
+
+.exp-esquerda{
+    flex: 1; 
+    padding: 30px;
+    border-radius: 10%;
+    box-sizing: border-box;
+    border: 2px solid #fff;
+}
+
+.exp-esquerda {
+    height: 20rem;
+    background: #555;
+    color: #fff;
+    margin-left: 20px;
+    box-shadow: #fff 0 0 20px 5px;
+}
+
+.exp-esquerda h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    text-align: center;
+    justify-content: center ;
+}
+
+.exp-esquerda p {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    text-align: justify;
+    justify-content: center;
+}
+.exp-direita {
+    color: #ffffff;
+    margin-right: 20px;
+    display: flex;             
+    flex-direction: column;       
+    align-items: center;        
+}
+
+.exp-direita h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.contato {
     position: fixed;
     bottom: 30px;
     right: 30px;
     width: 130px;
     height: 40px;
     background: #ffffff;
-    border-radius: 20%;
     border-radius: 20px;
     border: 4px solid #555;
+    display: flex;
     align-items: center;
     justify-content: center;
-    display: flex;
     z-index: 1000;
-    transition: background 0.3s width 0.3s;
-}
-.contato a{
+    transition: background 0.3s, width 0.3s;
     color: black;
     text-decoration: none;
     font-weight: bold;
-    transition: color 0.3s;
+    font-size: 1rem;
+    cursor: pointer;
+    text-decoration: none;
 }
 
-.contato:hover{
+.contato:hover {
     background: #000;
     box-shadow: #ffffff 1px 1px 5px 2px;
+    color: white;
 }
 
-.contato:hover a{
-    color: white;
-    
+#rodape {
+    width: 100%;
+    background: rgba(128,128,128,0.2); 
+    color: #fff;
+    text-align: center;
+    padding: 16px 0;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    margin-top: auto; 
 }
+
+
+
