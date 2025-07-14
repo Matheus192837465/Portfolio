@@ -46,7 +46,7 @@ section {
     background: #000;
     border-radius: 20%;
     border-radius: 20px;
-    border: 4px solid #000;
+    border: 2px solid white;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -56,7 +56,8 @@ section {
 
 .navegacao li:hover {
     width: 200px;
-    background: #ffffff; 
+    background: #ffffff;    
+    border: 4px solid #000;
     box-shadow: #ffffff 1px 1px 5px 2px;
     border-radius: 20px;
 }
@@ -81,6 +82,7 @@ section {
 .navegacao li.active:hover {
     width: 150px;           /* Só aumenta a largura */
     background: #fff;
+    border: 4px solid #000;
     box-shadow: #ffffff 1px 1px 5px 2px;
     border-radius: 20px;    /* Mantém o mesmo border-radius */
 }
@@ -166,20 +168,17 @@ section {
     
 }
 
-.exp-esquerda{
-    flex: 1; 
-    padding: 30px;
-    border-radius: 10%;
-    box-sizing: border-box;
-    border: 2px solid #fff;
-}
-
 .exp-esquerda {
     height: 20rem;
     background: #555;
     color: #fff;
     margin-left: 20px;
     box-shadow: #fff 0 0 20px 5px;
+    flex: 1; 
+    padding: 30px;
+    border-radius: 10%;
+    box-sizing: border-box;
+    border: 2px solid #fff; 
 }
 
 .exp-esquerda h2 {
@@ -208,6 +207,43 @@ section {
     margin-bottom: 20px;
     text-align: center;
 }
+
+/*conhecimentos*/
+.conhecimentos {    
+    display: flex;
+    width: 90%;
+    min-width: 300px;
+    gap: 50px;
+    margin-top: 100px;
+    margin-left: 70px;
+    flex-direction: column;
+}
+
+.card{
+    height: 20rem;
+    background: #555;
+    color: #fff;
+    margin-left: 20px;
+    box-shadow: #fff 0 0 20px 5px;
+    border-radius: 10%;
+    box-sizing: border-box;
+    border: 2px solid #fff; 
+}
+
+.card-img-top{
+    height: 15rem;
+    max-height: 15rem;
+    object-fit: cover;
+}
+
+.conhecimentos h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #fff;
+}
+
+
 .contato {
     position: fixed;
     bottom: 30px;
