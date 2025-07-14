@@ -11,7 +11,7 @@
 </head>
 <body style="background-color: black;">
     <header class="cabecalho">
-        <nav class="navegacao">
+        <nav class="navegacao" >
             <ul>
                 <li><a href="#home">Home</a></li>
                 <li><a href="#experiencia">Experiência</a></li>
@@ -22,7 +22,7 @@
     </header>
 
     <section id="home" class="home">
-        <div class="home-esquerda">
+        <!--<div class="home-esquerda">
             <h2>Matheus Yuji Sakuyama</h2>
             <p>Estudante do ifpr - Cursando técnologia da 
                 informação integrado ao Ensino Médio.
@@ -33,6 +33,23 @@
             <h2>Foto</h2>
             <img src="./imagens/Imagem do WhatsApp de 2025-06-05 à(s) 20.19.02_52127e73.jpg" alt="">
         </div>
+      -->
+      <div class="card mb-3">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img src="./imagens/Imagem do WhatsApp de 2025-06-05 à(s) 20.19.02_52127e73.jpg" class="img-fluid rounded-start" alt="">
+          </div>
+          <div class="col-md-8" style="background-color: #555; color: white;">
+            <div class="card-body">
+              <h5 class="card-title" style="font-size: 4rem; align-items: center;">Matheus Yuji Sakuyama</h5>
+              <p class="card-text" style="font-size: 1.2rem; padding: 2rem;">Estudante do ifpr - Cursando técnologia da 
+                informação integrado ao Ensino Médio.
+                Atualmente no 3º ano do curso. </p>
+
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
     <section id="experiencia" class="experiencia">
         <div class="exp-esquerda">
@@ -51,7 +68,7 @@
     <div class="row row-cols-1 row-cols-md-3 g-5">
   <div class="col">
     <div class="card h-100" style="background: #555; border: white;">
-      <img src="./imagens/tipos-de-redes-2.jpeg" class="card-img-top" alt="...">
+      <img src="./imagens/tipos-de-redes-2.jpeg" class="card-img-top" style="object-fit: cover;">
       <div class="card-body">
         <h5 class="card-title" style="color: white;">Básico de Redes</h5>
       </div>
@@ -100,6 +117,52 @@
   </div>
 </div>
 </section>
+    
+
+    <section id="sobre" class="sobre">
+      <h3>Sobre mim</h3>
+      <div class="accordion accordion-flush" id="accordionFlushExample" >
+  <div class="accordion-item" style="border: 1px solid white;" >
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+        Quem sou eu?
+      </button>
+    </h2>
+    <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+      <div class="accordion-body">Meu nome é Matheus Yuji Sakuyama, tenho 17 anos , ou seja, nasci em 2008 no dia 31/01. Atualmente curso Tecnologia da
+Informação no Instituto Federal do Paraná (IFPR).</div>
+    </div>
+  </div>
+  <div class="accordion-item" style="border: 1px solid white;">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+        Onde nasci e moro Atualmente?
+      </button>
+    </h2>
+    <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+      <div class="accordion-body">Nasci em São José dos Campos (SP), e vim morar aqui em Londrina com 3 anos(mais ou menos).</div>
+    </div>
+  </div>
+  <div class="accordion-item" style="border: 1px solid white;">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+        Como eu sou e quais são hobbies e interesses?
+      </button>
+    </h2>
+    <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+      <div class="accordion-body">Sou uma
+pessoa mais reservada, que valoriza a tranquilidade e os
+momentos de concentração. No meu tempo livre, gosto de
+jogar vôlei, assistir animes e séries, além de aproveitar
+alguns jogos no celular. Tenho bastante interesse pela área
+da tecnologia e estou sempre buscando aprender mais e
+me desenvolver tanto nos estudos quanto como pessoa.</div>
+    </div>
+  </div>
+</div>
+    </section>
+
+
     <div class="container">
         <a href="./contato.html" class="contato">Contato</a>
     </div>
@@ -109,5 +172,7 @@
 
                 </footer>
     <script src="index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.min.js" integrity="sha384-7qAoOXltbVP82dhxHAUje59V5r2YsVfBafyUDxEdApLPmcdhBPg1DKg1ERo0BZlK" crossorigin="anonymous"></script>
 </body>
 </html>

@@ -20,7 +20,7 @@ body {
 }
 
 section {
-    scroll-margin-top: 100px; /* ajuste para o tamanho do seu header */
+    scroll-margin-top: 100px;
 }
 
 .navegacao{
@@ -30,6 +30,7 @@ section {
     padding: 1rem 0;
     border-radius: 10px
 }
+
 
 .navegacao ul {
     width: 100%;
@@ -52,8 +53,14 @@ section {
     justify-content: center;
     transition: background 0.3s width 0.3s;
     padding: 0;
-}
 
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5rem;
+    gap: 1.5rem;
+    overflow: auto;
+    min-height: fit-content;
+}
 .navegacao li:hover {
     width: 200px;
     background: #ffffff;    
@@ -95,65 +102,21 @@ section {
 
 .home {
     display: flex;
-    width: 90%;
+    width: 100%;
     min-width: 300px;
     gap: 50px;
     margin-top: 50px;
     margin-left: 70px;
-    
-    
+    max-width: 1450px;
+    flex-direction: row;
 }
 
-.home-esquerda, .home-direita {
-    flex: 1; 
-    padding: 30px;
-    border-radius: 10%;
-    box-sizing: border-box;
-    border: 2px solid #fff;
-}
-
-.home-esquerda {
-    background: #555;
-    color: #fff;
-    margin-left: 20px;
-    box-shadow: #fff 0 0 20px 5px;
-}
-
-.home-esquerda h2 {
-    font-size: 2rem;
-    margin-bottom: 20px;
-    text-align: center;
-}
-
-.home-esquerda p {
-    font-size: 1.2rem;
-    line-height: 1.5;
-    text-align: justify;
-}
-.home-direita {
-    background: #555;
-    color: #ffffff;
-    margin-right: 20px;
-    box-shadow: #fff 0 0 20px 5px;
-    display: flex;             
-    flex-direction: column;       
-    align-items: center;         
-    justify-content: center;    
-}
-
-.home-direita h2 {
-    font-size: 2rem;
-    margin-bottom: 20px;
-    text-align: center;
-}
-
-
-.home-direita img{
-    width: 15rem;
-    height: auto;
-    border-radius: 10px;
-    box-shadow: #fff 0 0 20px 5px;
-    height: 25rem;
+.home img{
+    width: 50rem;
+    height: 30rem;
+    max-height: 30rem;
+    object-fit: cover;
+    background-color: #555;
 }
 
 /*Experiência*/
@@ -241,6 +204,40 @@ section {
     margin-bottom: 20px;
     text-align: center;
     color: #fff;
+}
+
+
+
+
+/*Sobre*/
+.sobre{
+    display: flex;
+    width: 90%;
+    min-width: 300px;
+    gap: 50px;
+    margin-top: 50px;
+    margin-left: 70px;
+    flex-direction: column;  
+}
+
+.sobre h3{
+    font-size: 2rem;
+    margin-bottom: 20px;
+    text-align: justify;
+    color: #fff;
+}
+
+.accordion-button {
+      background-color: #555 !important; 
+      color: white !important; 
+      border: 1px solid white; 
+      box-shadow: #ffffff 1px 1px 5px 2px; 
+}
+
+.accordion-collapse.collapse.show .accordion-body{
+   background-color: #555 !important; 
+   color: white !important; 
+   border: 1px solid white; 
 }
 
 
