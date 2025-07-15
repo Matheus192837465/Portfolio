@@ -108,7 +108,9 @@ section {
     gap: 50px;
     margin-top: 50px;
     margin-left: 70px;
-    max-width: 1200px;
+    max-width: 1300px;
+    padding: 50px;
+    margin: 0 auto;
     flex-direction: row;
 }
 
