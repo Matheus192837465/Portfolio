@@ -35,6 +35,9 @@ section {
 .navegacao ul {
     width: 100%;
     display: flex;
+    display: flex;
+    overflow: auto;
+    flex-wrap: wrap;
     gap: 24px;
     list-style: none;
     padding: 1rem;
@@ -417,19 +420,4 @@ section {
     padding: 8px 0;
     margin: 0 auto;
   }
-}
-
-/* Ajustes gerais fora do media query */
-
-.home,
-.experiencia,
-.sobre,
-.conhecimentos {
-  width: 100%;
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-#rodape {
-  width: 100%;
 }
