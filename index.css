@@ -203,6 +203,8 @@ section {
 }
 
 .conhecimentos h2 {
+    margin-top: 50px;
+    gap: 50px;
     font-size: 2rem;
     margin-bottom: 20px;
     text-align: center;
@@ -218,12 +220,13 @@ section {
     width: 90%;
     min-width: 300px;
     gap: 50px;
-    margin-top: 50px;
+    margin-top: 100px;
     margin-left: 70px;
     flex-direction: column;  
 }
 
 .sobre h3{
+    margin-top: 50px;
     font-size: 2rem;
     margin-bottom: 20px;
     text-align: justify;
@@ -277,10 +280,156 @@ section {
     background: rgba(128,128,128,0.2); 
     color: #fff;
     text-align: center;
-    padding: 16px 0;
     font-size: 1rem;
     letter-spacing: 1px;
     margin-top: auto; 
 }
 
 
+@media (max-width: 1200px) {
+  .home {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1200px;
+  }
+
+  .home img {
+    width: 90%;
+    height: auto;
+    max-height: none;
+  }
+
+  .experiencia {
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    padding: 20px;
+    width: 100%;
+    max-width: 1200px;
+  }
+
+  .exp-esquerda,
+  .exp-direita {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  #rodape {
+    width: 100%;
+    font-size: 0.9rem;
+    padding: 12px 0;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .home {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  .home img {
+    width: 90%;
+    height: auto;
+  }
+
+  .experiencia {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    margin: 0 auto;
+    padding: 20px;
+    width: 100%;
+  }
+
+  .exp-esquerda,
+  .exp-direita {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .exp-esquerda {
+    height: auto;
+    padding: 20px;
+  }
+
+  .exp-direita h2 {
+    font-size: 1.5rem;
+  }
+
+  #rodape {
+    width: 100%;
+    font-size: 0.8rem;
+    padding: 10px 0;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 576px) {
+  .home {
+    padding: 10px;
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  .home img {
+    width: 90%;
+    height: auto;
+  }
+
+  .experiencia {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  .exp-esquerda,
+  .exp-direita {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .exp-esquerda {
+    padding: 10px;
+  }
+
+  .exp-esquerda h2,
+  .exp-direita h2 {
+    font-size: 1.2rem;
+  }
+
+  .exp-esquerda p {
+    font-size: 1rem;
+  }
+
+  #rodape {
+    width: 100%;
+    font-size: 0.7rem;
+    padding: 8px 0;
+    margin: 0 auto;
+  }
+}
+
+/* Ajustes gerais fora do media query */
+
+.home,
+.experiencia,
+.sobre,
+.conhecimentos {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+#rodape {
+  width: 100%;
+}
